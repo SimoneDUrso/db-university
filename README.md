@@ -18,3 +18,9 @@
 SELECT \*
 FROM `students`
 WHERE YEAR(`date_of_birth`) = 1990;
+
+<!-- SECONDA QUERY -->
+
+SELECT \*
+FROM `courses`
+WHERE `cfu` > 10;
