@@ -68,3 +68,9 @@ INSERT INTO `students`(`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_
 
 UPDATE `teachers` SET `office_number`='126'
 WHERE `id` = '58';
+
+<!-- UNDICESIMA QUERY -->
+
+DELETE
+FROM `students`
+WHERE `id` = '5003';
