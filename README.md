@@ -30,3 +30,9 @@ WHERE `cfu` > 10;
 SELECT \*
 FROM `students`
 WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURRENT_DATE ) > 30;
+
+<!-- QUARTA QUERY -->
+
+SELECT \*
+FROM `courses`
+WHERE `year` = '1' AND `period` = 'I semestre';
