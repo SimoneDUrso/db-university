@@ -42,3 +42,9 @@ WHERE `year` = '1' AND `period` = 'I semestre';
 SELECT \*
 FROM `exams`
 WHERE `hour` >= '14:00:00' AND DATE = "2020-06-20";
+
+<!-- SESTA QUERY -->
+
+SELECT \*
+FROM `degrees`
+WHERE `level` = 'magistrale';
