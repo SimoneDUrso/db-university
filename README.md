@@ -24,3 +24,9 @@ WHERE YEAR(`date_of_birth`) = 1990;
 SELECT \*
 FROM `courses`
 WHERE `cfu` > 10;
+
+<!-- TERZA QUERY -->
+
+SELECT \*
+FROM `students`
+WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURRENT_DATE ) > 30;
