@@ -48,3 +48,8 @@ WHERE `hour` >= '14:00:00' AND DATE = "2020-06-20";
 SELECT \*
 FROM `degrees`
 WHERE `level` = 'magistrale';
+
+<!-- SETTIMA QUERY -->
+
+SELECT COUNT(\*) AS 'NumberOfProduct'
+FROM `departments`;
