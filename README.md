@@ -53,3 +53,9 @@ WHERE `level` = 'magistrale';
 
 SELECT COUNT(\*) AS 'NumberOfProduct'
 FROM `departments`;
+
+<!-- OTTAVA QUERY -->
+
+SELECT COUNT(\*) as 'teachersWithoutPhone'
+FROM `teachers`
+WHERE `phone` IS null;
