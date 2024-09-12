@@ -36,3 +36,9 @@ WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURRENT_DATE ) > 30;
 SELECT \*
 FROM `courses`
 WHERE `year` = '1' AND `period` = 'I semestre';
+
+<!-- QUINTA QUERY -->
+
+SELECT \*
+FROM `exams`
+WHERE `hour` >= '14:00:00' AND DATE = "2020-06-20";
