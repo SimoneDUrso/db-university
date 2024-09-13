@@ -87,3 +87,9 @@ WHERE `id` = '5003';
 SELECT COUNT(\*) AS 'numero_iscritti', YEAR(`enrolment_date`) as 'anno'
 FROM `students`
 GROUP BY `anno`;
+
+<!-- SECONDA QUERY CON GROUP BY -->
+
+SELECT COUNT(\*) as 'insegnanti', `office_address`
+FROM `teachers`
+GROUP BY `office_address`;
