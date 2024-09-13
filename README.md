@@ -51,7 +51,7 @@ WHERE `level` = 'magistrale';
 
 <!-- SETTIMA QUERY -->
 
-SELECT COUNT(\*) AS 'NumberOfProduct'
+SELECT COUNT(\*) AS 'NumberOfDepartments'
 FROM `departments`;
 
 <!-- OTTAVA QUERY -->
@@ -74,3 +74,16 @@ WHERE `id` = '58';
 DELETE
 FROM `students`
 WHERE `id` = '5003';
+
+<!-- QUERY CON GROUP BY -->
+
+1. Contare quanti iscritti ci sono stati ogni anno
+2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+3. Calcolare la media dei voti di ogni appello d'esame
+4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+
+<!-- PRIMA QUERY CON GROUP BY -->
+
+SELECT COUNT(\*) AS 'numero_iscritti', YEAR(`enrolment_date`) as 'anno'
+FROM `students`
+GROUP BY `anno`;
