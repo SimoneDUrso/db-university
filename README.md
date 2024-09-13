@@ -93,3 +93,9 @@ GROUP BY `anno`;
 SELECT COUNT(\*) as 'insegnanti', `office_address`
 FROM `teachers`
 GROUP BY `office_address`;
+
+<!-- TERZA QUERY CON GROUP BY -->
+
+SELECT AVG(`vote`) as 'media_voti', `exam_id`
+FROM `exam_student`
+GROUP BY `exam_id`;
