@@ -128,3 +128,11 @@ SELECT `students`.`name` as `nome_studente`,`students`.`surname` as `cognome_stu
 FROM `students`
 JOIN `degrees` ON `degrees`.`id` = `students`.`degree_id`
 WHERE `degrees`.`name` = "Corso di Laurea in Economia";
+
+<!-- SECONDA QUERY CON JOIN -->
+
+SELECT `degrees`.`name` as `nome_corso`,`degrees`.`level` as `livello_laurea`, `departments`.`name` as `nome_dipartimento`
+FROM `degrees`
+JOIN `departments` ON `departments`.`id` = `degrees`.`department_id`
+WHERE `degrees`.`level` = "magistrale"
+AND `departments`.`name` = "Dipartimento di Neuroscienze";
