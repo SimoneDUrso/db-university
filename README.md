@@ -99,3 +99,9 @@ GROUP BY `office_address`;
 SELECT AVG(`vote`) as 'media_voti', `exam_id`
 FROM `exam_student`
 GROUP BY `exam_id`;
+
+<!-- QUARTA QUERY CON GROUP BY -->
+
+SELECT COUNT(\*) as `numero_corsi`, `department_id`
+FROM `degrees`
+GROUP BY `department_id`;
