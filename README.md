@@ -144,3 +144,11 @@ FROM `courses`
 JOIN `course_teacher` ON `course_teacher`.`course_id` = `courses`.`id`
 JOIN `teachers`ON `teachers`.`id` = `course_teacher`.`teacher_id`
 WHERE `teachers`.`id` = 44;
+
+<!-- QUARTA QUERY CON JOIN -->
+
+SELECT `students`.`name`, `students`.`surname`, `degrees`.`name` as `nome_corso_di_Laurea`,`departments`.`name` as `nome_dipartimento`
+FROM `students`
+JOIN `degrees` ON `degrees`.`id`= `students`.`degree_id`
+JOIN `departments` ON `departments`.`id` = `degrees`.`department_id`
+ORDER BY `students`.`surname` ASC, `students`.`name` ASC;
