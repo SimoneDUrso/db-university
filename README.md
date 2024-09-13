@@ -152,3 +152,11 @@ FROM `students`
 JOIN `degrees` ON `degrees`.`id`= `students`.`degree_id`
 JOIN `departments` ON `departments`.`id` = `degrees`.`department_id`
 ORDER BY `students`.`surname` ASC, `students`.`name` ASC;
+
+<!-- QUINTA QUERY CON JOIN -->
+
+SELECT `degrees`.`name` as 'nome_corso', `courses`.`name` as 'nome_materia', `teachers`.`name`, `teachers`.`surname`
+FROM `degrees`
+JOIN `courses` ON `courses`.`degree_id` = `degrees`.`id`
+JOIN `course_teacher` ON `course_teacher`.`course_id` = `courses`.`id`
+JOIN `teachers` ON `teachers`.`id` = `course_teacher`.`teacher_id`;
